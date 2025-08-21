@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikki's Cooking Corner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #e63946;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .search-bar {
+      text-align: center;
+      margin: 20px;
+    }
+    .search-bar input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #e63946;
+      border-radius: 5px;
+    }
+    .recipes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .recipe-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .recipe-card:hover {
+      transform: scale(1.03);
+    }
+    .recipe-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .recipe-card h3 {
+      margin: 10px;
+      font-size: 20px;
+      color: #e63946;
+    }
+    .recipe-card p {
+      margin: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #ffb703;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Contact Form */
+    .contact-form {
+      max-width: 500px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      text-align: center;
+      color: #e63946;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #d62828;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍳 Nikki's Cooking Corner</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Recipes</a>
+      <a href="#">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search recipes...">
+  </div>
+
+  <section class="recipes">
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+      <h3>Creamy Pasta</h3>
+      <p>A quick and delicious creamy pasta recipe for dinner.</p>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?salad" alt="Salad">
+      <h3>Fresh Veggie Salad</h3>
+      <p>Healthy and refreshing salad loaded with veggies.</p>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?cake" alt="Cake">
+      <h3>Chocolate Cake</h3>
+      <p>Soft and moist chocolate cake perfect for desserts.</p>
+    </div>
+    <div class="recipe-card">
+      <img src="https://source.unsplash.com/400x300/?soup" alt="Soup">
+      <h3>Tomato Soup</h3>
+      <p>Hot and tasty soup made with fresh tomatoes and spices.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mnzydby" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📞 Contact: <a href="tel:9554742167">9554742167</a></p>
+    <p>📧 Email: <a href="mailto:devismita918@gmail.com">devismita918@gmail.com</a></p>
+    <p>© 2025 Nikki's Cooking Corner | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
